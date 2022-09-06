@@ -31,3 +31,15 @@ function drop(e){
 
 // ctx.fillStyle = "green";
 // ctx.fillRect(10, 10, 150, 100);
+
+window.addEventListener('resize', function(){
+
+    if(this.window.innerWidth < 420){
+        console.log('smartfhone')
+
+    }else if(this.window.innerWidth < 720){
+        console.log('tablet')
+    }else{
+        console.log('desktop')
+    }
+})
